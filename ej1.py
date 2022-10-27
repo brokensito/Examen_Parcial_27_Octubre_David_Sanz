@@ -36,6 +36,9 @@ def merge(izquierda, derecha):
         lista_mezclada += derecha
     return lista_mezclada
 
+    
+####################
+
 def ejercicio1(lista):
     for i, c in enumerate(lista):
 
