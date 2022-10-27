@@ -26,6 +26,8 @@ maria = Alumno("Maria", 10)
 
 print(carlos.calificacion())
 print(alberto.calificacion())
+print(rodrigo.calificacion())
+pr
 
 
 
