@@ -30,5 +30,9 @@ rodrigo = Alumno("Rodrigo",3)
 maria = Alumno("Maria", 10)
 
 print(carlos.__str__())
+print(alberto.__str__())
+print(rodrigo.__str__())
+print(maria.__str__())
+
 
 
