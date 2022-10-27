@@ -43,14 +43,24 @@ def ejercicio1(lista):
         if lista[i]%10 == 0 and lista[i]<200:
             lista_n.append(c)
 
-        for i in lista:
-            if i>300:
-                break
+        if i>300:
+            break
 
     return lista_n
 
 
-print(mergesort(lista))
+n_lista = mergesort(lista)
+
+def esta_en_lista(n_lista):
+    if 145 in n_lista:
+        print(n_lista.index(145))
+    else:
+        print("-1")
+
+esta_en_lista(n_lista)
+
+
+
 
 
 
