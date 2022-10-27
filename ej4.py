@@ -1,4 +1,4 @@
-from algoritmos.hash import crear_tabla, funcion_hash, cantidad_elementos, agregar, buscar, quitar
+from algoritmos.hash import crear_tabla, funcion_hash, agregar
 
 
 
@@ -20,7 +20,6 @@ for i in range(32, 126):
 for j in range(32, 126):
     agregar(t_2, chr(j), convert=True )
 
-#### Comprobacion
 
 valor = "H"
 
