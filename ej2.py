@@ -25,7 +25,7 @@ rodrigo = Alumno("Rodrigo",3)
 maria = Alumno("Maria", 10)
 
 print(carlos.calificacion())
-
+print(alberto.calificacion())
 
 
 
