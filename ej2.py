@@ -3,9 +3,7 @@ class Alumno:
     def __init__(self, nombre, nota):
         self.nombre = nombre
         self.nota = nota
-
-    def __str__(self):
-        return "El alumno se ha creado con exito."
+        print("El alumno se ha creado con exito")
 
     def calificacion(self):
         if self.nota>=5:
@@ -24,10 +22,10 @@ alberto = Alumno("Alberto",4)
 rodrigo = Alumno("Rodrigo",3)
 maria = Alumno("Maria", 10)
 
-print(carlos.calificacion())
-print(alberto.calificacion())
-print(rodrigo.calificacion())
-print(maria.calificacion())
+# print(carlos.calificacion())
+# print(alberto.calificacion())
+# print(rodrigo.calificacion())
+# print(maria.calificacion())
 
 
 

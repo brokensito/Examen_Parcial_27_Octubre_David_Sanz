@@ -15,3 +15,5 @@ class Alumno:
             mensaje= "El alumno ha SUSPENDIDO con una nota de: {}".format(self.nota)
 
         return mensaje
+
+
