@@ -1,0 +1,1 @@
+from algoritmos.hash import 

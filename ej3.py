@@ -9,6 +9,12 @@ class Alumno:
         print("El alumno se ha creado con exito")
 
     def __str__(self):
+        """
+        
+        >>> def __str__(self):
+            return "Lo que quiero mostrar"
+        
+        """
         return "El alumno {} ha sacado un {} en el examen".format(self.nombre,self.nota)
 
     def calificacion(self):
@@ -33,6 +39,10 @@ print(carlos.__str__())
 print(alberto.__str__())
 print(rodrigo.__str__())
 print(maria.__str__())
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
 
 
 
