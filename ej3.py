@@ -1,3 +1,6 @@
+### Parte 1 del ejercicio 3
+
+
 class Alumno:
     
     def __init__(self, nombre, nota):
@@ -16,5 +19,16 @@ class Alumno:
             mensaje= "El alumno ha SUSPENDIDO con una nota de: {}".format(self.nota)
 
         return mensaje
+
+
+### Comprobacion
+
+
+carlos = Alumno("Carlos",9)
+alberto = Alumno("Alberto",4)
+rodrigo = Alumno("Rodrigo",3)
+maria = Alumno("Maria", 10)
+
+print(carlos.__str__())
 
 
