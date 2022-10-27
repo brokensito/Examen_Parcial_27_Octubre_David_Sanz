@@ -54,13 +54,32 @@ def ejercicio1(lista):
 
 n_lista = mergesort(lista)
 
+"""
+
+>>> n_lista = mergesort(lista)
+>>> print(n_lista)
+[18, 30, 50, 70, 80, 145, 210, 333]
+
+"""
 def esta_en_lista(n_lista):
     if 145 in n_lista:
         print(n_lista.index(145))
     else:
         print("-1")
 
-esta_en_lista(n_lista)
+lista_nueva = esta_en_lista(n_lista)
+
+"""
+>>> lista_nueva = esta_en_lista(n_lista)
+>>> print(lista_nueva)
+5
+
+"""
+
+import doctest
+
+if __name__ == "__main__":
+    doctest.testmod()
 
 
 
