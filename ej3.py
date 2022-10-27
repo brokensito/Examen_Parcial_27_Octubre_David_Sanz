@@ -10,9 +10,12 @@ class Alumno:
 
     def __str__(self):
         """
+        La funcion str sirve para imprimir las caracteristicas que se establecen previamente
+
+        >>> rodrigo = Alumno("Rodrigo", 10)
+        >>> print(rodrigo.__str__())
         
-        >>> def __str__(self):
-            return "Lo que quiero mostrar"
+
         
         """
         return "El alumno {} ha sacado un {} en el examen".format(self.nombre,self.nota)
