@@ -1,11 +1,58 @@
 lista = [18, 50, 210, 80, 145, 333, 70, 30]
 
-def ejercicio1(lista):
-    for i in range(len(lista)):
-        if lista[i]%10 == int and lista[i]<200:
-            print(i)
+### Estas funciones estan sacadas del libro de algoritmos
+def mergesort(lista):
 
-ejercicio1(lista)
+    """Metodo de ordenamiento"""
+    if len(lista)<=1:
+        return lista
+    else: 
+        medio = len(lista) // 2
+        izquierda = []
+        for i in range(0, medio):
+            izquierda.append(lista[i])
+        derecha = []
+        for i in range(medio, len(lista)):
+            derecha.append(lista[i])
+        izquierda = mergesort(izquierda)
+        derecha = mergesort(derecha)
+        if (izquierda[medio-1] <= derecha[0]):
+            izquierda += derecha
+            return izquierda
+        resultado = merge(izquierda, derecha)
+        return resultado
+
+def merge(izquierda, derecha):
+    """Funcion para mezclar listas"""
+    lista_mezclada = []
+    while (len(izquierda) > 0) and (len(derecha) > 0):
+        if (izquierda[0] < derecha[0]):
+            lista_mezclada.append(izquierda.pop(0))
+        else:
+            lista_mezclada.append(derecha.pop(0))
+    if (len(izquierda) > 0):
+        lista_mezclada += izquierda
+    if (len(derecha) > 0):
+        lista_mezclada += derecha
+    return lista_mezclada
+
+def ejercicio1(lista):
+    for i, c in enumerate(lista):
+
+        lista_n = []
+        if lista[i]%10 == 0 and lista[i]<200:
+            lista_n.append(c)
+
+        for i in lista:
+            if i>300:
+                break
+
+    return lista_n
+
+
+print(mergesort(lista))
+
+
 
 
 
