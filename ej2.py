@@ -16,6 +16,20 @@ class Alumno:
 
         return mensaje
 
+
+"""Experimentacion"""
+
 carlos = Alumno("Carlos",9)
-alberto = Alum
+alberto = Alumno("Alberto",4)
+rodrigo = Alumno("Rodrigo",3)
+maria = Alumno("Maria", 10)
+
+print(carlos.calificacion())
+print(alberto.calificacion())
+print(rodrigo.calificacion())
+print(maria.calificacion())
+
+
+
+
 
